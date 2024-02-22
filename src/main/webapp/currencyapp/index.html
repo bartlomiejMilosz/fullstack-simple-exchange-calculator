@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="/app/currencyapp/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <form id="currencyForm">
+        <h1>Currency Calculator</h1>
+        <div class="form-group">
+          <label for="money"><strong>Amount:</strong></label>
+          <input
+            id="money"
+            name="value"
+            type="number"
+            step="0.01"
+            placeholder="99.99"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p><strong>Conversion factor:</strong></p>
+          <div class="radio-form">
+            <label class="radio" for="EURPLN">EUR to PLN</label>
+            <input
+              id="EURPLN"
+              type="radio"
+              name="exchange"
+              value="EURPLN"
+              required
+            />
+          </div>
+          <div class="radio-form">
+            <label class="radio" for="PLNEUR">PLN to EUR</label>
+            <input id="PLNEUR" type="radio" name="exchange" value="PLNEUR" />
+          </div>
+        </div>
+        <button type="submit">Recalculate</button>
+        <div class="result" id="result"></div>
+      </form>
+      <!-- ... -->
+      <script src="/app/currencyapp/script.js"></script>
+    </main>
+  </body>
+</html>
