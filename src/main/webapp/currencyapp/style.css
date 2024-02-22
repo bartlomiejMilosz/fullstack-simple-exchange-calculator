@@ -1,0 +1,55 @@
+/* Apply a natural box layout model to all elements */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+form {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="number"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+.result {
+  margin-top: 20px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.25em;
+}
+
+.radio {
+    display: inline;
+}
+
+.radio-form {
+    margin: 10px 0;
+}
